@@ -1,0 +1,6 @@
+[submodule "external/QmlHttpRequest"]
+	path = external/QmlHttpRequest
+	url = https://github.com/alirezah95/QmlHttpRequest.git
+[submodule "external/QMdi"]
+	path = external/QMdi
+	url = https://github.com/alirezah95/QMdi.git

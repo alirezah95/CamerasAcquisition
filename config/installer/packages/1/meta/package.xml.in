@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package>
+    <Name>%{GUI_COMPONENT_URL}</Name>
+    <DisplayName>%{GUI_COMPONENT_NAME}</DisplayName>
+    <Discription>Installs %{PROJECT_NAME} application</Discription>
+    <Version>%{GUI_COMPONENT_VERSION}</Version>
+    <ReleaseDate>%{GUI_COMPONENT_RELEASE_DATE}</ReleaseDate>
+    <Default>true</Default>
+    <ForcedInstallation>true</ForcedInstallation>
+    <Script>createShortcut.qs</Script>
+    <Licenses>
+        <License name="License Aggreement" file="LICENSE"></License>
+    </Licenses>
+</Package>

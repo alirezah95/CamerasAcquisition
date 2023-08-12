@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Installer>
+    <Name>%{PROJECT_NAME}</Name>
+    <Version>%{PROJECT_VERSION}</Version>
+    <Title>%{PROJECT_NAME} Application Installer</Title>
+    <Publisher>%{PROJECT_CREATOR}</Publisher>
+    <StartMenuDir>Program</StartMenuDir>
+    <TargetDir>@ApplicationsDir@/%{PROJECT_NAME}</TargetDir>
+    <ProductUrl>%{PROJECT_HOMEPAGE_URL}</ProductUrl>
+    <RunProgram>@TargetDir@/%{PROJECT_NAME}.exe</RunProgram>
+    <WizardStyle>Modern</WizardStyle>
+    <WizardMinimumWidth>500</WizardMinimumWidth>
+    <WizardMinimumHeight>600</WizardMinimumHeight>
+    <MaintenanceToolName>%{PROJECT_NAME}MaintenanceTool</MaintenanceToolName>
+    <AllowNonAsciiCharacters>true</AllowNonAsciiCharacters>
+    <RemoteRepositories>
+        <Repository>
+            <Url></Url>
+        </Repository>
+    </RemoteRepositories>
+</Installer>

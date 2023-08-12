@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package>
+    <Name>org.qt.components</Name>
+    <DisplayName>Qt</DisplayName>
+    <Discription>Installs Qt components</Discription>
+    <Version>%{QT_VERSION}</Version>
+    <ReleaseDate>%{QT_RELEASE_DATE}</ReleaseDate>
+    <ForcedInstallation>true</ForcedInstallation>
+    <Essential>true</Essential>
+    <Virtual>true</Virtual>
+</Package>

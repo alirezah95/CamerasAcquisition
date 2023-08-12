@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package>
+    <Name>maintenancetool</Name>
+    <DisplayName>Maintenance Tool</DisplayName>
+    <Discription>Installs Maintenance Tool</Discription>
+    <Version>%{MAINTENANCE_TOOL_VERSION}</Version>
+    <ReleaseDate>%{MAINTENANCE_TOOL_RELEASE_DATE}</ReleaseDate>
+    <ForcedInstallation>true</ForcedInstallation>
+    <Script>installscript.qs</Script>
+    <Essential>true</Essential>
+    <Virtual>true</Virtual>
+</Package>
