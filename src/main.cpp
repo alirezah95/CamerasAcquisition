@@ -2,6 +2,7 @@
 #include <QQmlApplicationEngine>
 
 #include "config.h"
+#include "webcamimageprovider.hpp"
 
 int main(int argc, char* argv[])
 {
@@ -28,6 +29,9 @@ int main(int argc, char* argv[])
 #else
     engine.addImportPath(QString(":/qt/qml/%1/ui").arg(MAIN_MODULE_NAME));
 #endif
+
+    auto webImgProvider = new WebcamImageProvider();
+    engine.addImageProvider(QLatin1String("webcamimage"), webImgProvider);
 
     engine.addImportPath("./external");
 
