@@ -34,6 +34,26 @@ ApplicationWindow {
             radius: Material.SmallScale
             border.width: 2
             border.color: Material.frameColor
+
+            Image {
+                id: _image1
+
+                anchors.fill: parent
+                anchors.margins: 4
+
+                cache: false
+            }
+
+            Timer {
+                interval: 30
+                repeat: true
+                running: true
+
+                onTriggered: {
+                    _image1.source = ""
+                    _image1.source = "image://webcamimage/webcam"
+                }
+            }
         }
 
         Rectangle {
@@ -46,6 +66,26 @@ ApplicationWindow {
             radius: Material.SmallScale
             border.width: 2
             border.color: Material.frameColor
+
+            Image {
+                id: _image2
+
+                anchors.fill: parent
+                anchors.margins: 4
+
+                cache: false
+            }
+
+            Timer {
+                interval: 30
+                repeat: true
+                running: true
+
+                onTriggered: {
+                    _image2.source = ""
+                    _image2.source = "image://webcamimage/webcam"
+                }
+            }
         }
 
         Rectangle {
