@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.24)
 
 # Setting project information
-set(PROJECT_NAME "TemplateProject")
+set(PROJECT_NAME "CamerasAcquisition")
 set(PROJECT_VERSION_MAJOR 0)
 set(PROJECT_VERSION_MINOR 1)
 set(PROJECT_VERSION_PATCH 0)
