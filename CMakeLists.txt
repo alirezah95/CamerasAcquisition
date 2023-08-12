@@ -52,6 +52,9 @@ set(QML_IMPORT_PATH
 
 find_package(Qt6 6.5 REQUIRED COMPONENTS Core Quick)
 
+# Opencv package
+find_package(OpenCV REQUIRED)
+
 qt_standard_project_setup(REQUIRES 6.5)
 
 qt_add_resources(PROJECT_RESOURCES
@@ -60,6 +63,9 @@ qt_add_resources(PROJECT_RESOURCES
 
 qt_add_executable(${PROJECT_NAME}App
     src/main.cpp
+    src/webcamimageprovider.cpp
+    src/webcamimageprovider.hpp
+
     ${CMAKE_BINARY_DIR}/config.h
     ${PROJECT_RESOURCES}
 )
@@ -86,6 +92,7 @@ add_subdirectory(external/QMdi)
 
 target_include_directories(${PROJECT_NAME}App PRIVATE
     ${CMAKE_CURRENT_BINARY_DIR}
+    ${CMAKE_SOURCE_DIR}/src
 )
 
 set_target_properties(${PROJECT_NAME}App PROPERTIES
@@ -99,6 +106,7 @@ set_target_properties(${PROJECT_NAME}App PROPERTIES
 target_link_libraries(${PROJECT_NAME}App PRIVATE
     Qt6::Quick
     Qt6::Core
+    ${OpenCV_LIBS}
 )
 
 install(TARGETS ${PROJECT_NAME}App
